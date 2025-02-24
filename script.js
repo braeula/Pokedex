@@ -66,6 +66,7 @@ async function getPokemons(filtered) {
 }
 
 function addPokemons() {
+    html='';
     for (let i = 0; i < pokemons.length; i++) {
         let name = pokemons[i].name;
         let type = pokemons[i].types[0].type.name;
