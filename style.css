@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    background-color: #05171E;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: #082129;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 32px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.logo svg{
+    transform: scale(0.4);
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 48px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.pokemon-container {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.pokemon-container:hover {
+    cursor: pointer;
+    /* transform: scale(1.05); */
+}
+
+.pok-header {
+    height: 32px;
+    background-color: #082129;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.number {
+    position: relative;
+    left: 0;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+}
+
+.pok-content {
+    background-color: #76CC54;
+    height: 200px;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.pok-content img {
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(8px 8px 8px #0a0a16);
+    display: block;
+    margin: auto;
+}
+
+.pok-content img:hover {
+    /* filter: saturate(80%); */
+    transform: scale(1.05);
+}
+
+.pok-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 64px;
+    background-color: #082129;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.pok-footer img {
+    height: 20px;
+    width: 90px;
+}
+
+
+.icon {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    /* margin:auto; */
+    transition: 200ms all;
+}
+
+.icon:hover {
+    filter: saturate(200%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.icon img {
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+    filter: drop-shadow(4px 4px 8px #0a0a16);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+}
+
+.infobox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 60vh; */
+    width: 350px;
+    z-index: 1100;    
+    filter: drop-shadow(4px 4px 8px #0a0a16);
+    /* background-color: rgba(128, 128, 128, 0.349); */
+    /* margin: auto; */
+    /* align-content: center; */
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 64px;
+    background-color: #082129;
+}
+
+.icon-section img {
+    height: 22px;
+    width: 22px;
+}
+
+.info-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #124758;
+}
+
+.menu-item {
+    height: 24px;
+    width: 50%;
+    text-align: center;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid #D06865;
+}
+
+.d-none {
+    display: none;
+}
+
+.info-field {
+    background-color: #0D3240;
+    min-height: 180px;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 160%;
+}
+
+.info-field {
+    background-color: #0D3240;
+    min-height: 180px;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 160%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+progress {
+    width: 160px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.more {
+    position: relative;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #124758;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #082129;
+    filter: drop-shadow(8px 8px 8px #0a0a16);
+}
+
+.more:hover {
+    cursor: pointer;
+}
